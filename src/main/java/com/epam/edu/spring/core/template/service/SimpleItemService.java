@@ -1,11 +1,12 @@
 package com.epam.edu.spring.core.template.service;
 
 import com.epam.edu.spring.core.template.entity.Item;
+import com.epam.edu.spring.core.template.repository.ItemRepository;
 import com.epam.edu.spring.core.template.validator.ItemValidator;
 
 public class SimpleItemService implements ItemService {
 
-    private ItemService itemService;
+    private ItemRepository itemRepository;
     private ItemValidator itemValidator;
 
     @Override
